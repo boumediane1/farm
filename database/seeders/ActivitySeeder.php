@@ -15,32 +15,41 @@ class ActivitySeeder extends Seeder
      */
     public function run()
     {
+//        $activities = [
+//            ['title' => 'Arcure'],
+//            ['title' => 'Couverture des trous'],
+//            ['title' => 'Deshbrage Manuel'],
+//            ['title' => 'Ebourgeonnement'],
+//            ['title' => 'Eclaircissage'],
+//            ['title' => 'Epondage de fumier'],
+//            ['title' => 'Destribution des sac de composte'],
+//            ['title' => 'Labour'],
+//            ['title' => 'Mastique'],
+//            ['title' => 'Nettyoage'],
+//            ['title' => 'Palissage'],
+//            ['title' => 'Pincement'],
+//            ['title' => 'Plantation'],
+//            ['title' => 'Recolte'],
+//            ['title' => 'Taille'],
+//            ['title' => 'Tracteuriste'],
+//            ['title' => 'Traitement phyto'],
+//            ['title' => 'Trouaison'],
+//            ['title' => 'Lagarde'],
+//            ['title' => 'Melange de fumier'],
+//            ['title' => 'Deplacement des tubes'],
+//            ['title' => 'Ramassaga des pierres'],
+//            ['title' => 'Couverture des trancher'],
+//            ['title' => 'Préparation des trancher'],
+//            ['title' => 'Piquettage']
+//        ];
+
         $activities = [
-            ['title' => 'Arcure'],
-            ['title' => 'Couverture des trous'],
-            ['title' => 'Deshbrage Manuel'],
-            ['title' => 'Ebourgeonnement'],
-            ['title' => 'Eclaircissage'],
-            ['title' => 'Epondage de fumier'],
-            ['title' => 'Destribution des sac de composte'],
-            ['title' => 'Labour'],
-            ['title' => 'Mastique'],
-            ['title' => 'Nettyoage'],
-            ['title' => 'Palissage'],
-            ['title' => 'Pincement'],
+            ['title' => 'Arrosage'],
+            ['title' => 'Labourage'],
             ['title' => 'Plantation'],
-            ['title' => 'Recolte'],
-            ['title' => 'Taille'],
-            ['title' => 'Tracteuriste'],
-            ['title' => 'Traitement phyto'],
-            ['title' => 'Trouaison'],
-            ['title' => 'Lagarde'],
-            ['title' => 'Melange de fumier'],
-            ['title' => 'Deplacement des tubes'],
-            ['title' => 'Ramassaga des pierres'],
-            ['title' => 'Couverture des trancher'],
-            ['title' => 'Préparation des trancher'],
-            ['title' => 'Piquettage']
+            ['title' => 'Pulvérisation'],
+            ['title' => 'Récolte'],
+            ['title' => 'Fertilisation']
         ];
 
         DB::table('activities')->insert($activities);

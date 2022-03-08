@@ -6,9 +6,6 @@
                     <template #title>
                         Sidebar
                     </template>
-                    <template #description>
-                        sidebar
-                    </template>
                     <template #form>
                         <div class="col-span-6">
                             <jet-label for="name" value="Nom" />
@@ -42,16 +39,16 @@
                         <div class="col-span-3">
                             <div class="flex gap-4">
                                 <div class="flex items-center">
-                                    <jet-input class="text-indigo-500" type="radio" id="staionnaire" name="role" v-model.number="form.role" :value="4" checked />
-                                    <jet-label for="staionnaire" value="Stationnaire" class="ml-2" />
+                                    <jet-input class="text-green-500" type="radio" id="4" name="role" v-model.number="form.role" :value="4" checked />
+                                    <jet-label class="ml-3 text-sm" for="4">Stationnaire</jet-label>
                                 </div>
                                 <div class="flex items-center">
-                                    <jet-input class="text-indigo-500" type="radio" id="gardien" name="role" :class="{'border-gray-200': has.guardian}" v-model.number="form.role" :value="3" :disabled="has.guardian" />
-                                    <jet-label for="gardien" value="Gardien" class="ml-2" :class="{'text-gray-300': has.guardian}" />
+                                    <jet-input class="text-green-500" type="radio" id="3" name="role" :class="{'border-gray-200': has.guardian}" v-model.number="form.role" :value="3" :disabled="has.guardian" />
+                                    <jet-label class="ml-3 text-sm" for="3" :class="{'text-gray-300': has.guardian}">Gardien</jet-label>
                                 </div>
                                 <div class="flex items-center">
-                                    <jet-input type="radio" id="gérant" name="role" :class="{'border-gray-200': has.manager}" v-model.number="form.role" :value="2" :disabled="has.manager" />
-                                    <jet-label for="gérant" value="Gérant" class="ml-2" :class="{'text-gray-300': has.manager}" />
+                                    <jet-input class="text-green-500" type="radio" id="2" name="role" :class="{'border-gray-200': has.manager}" v-model.number="form.role" :value="2" :disabled="has.manager" />
+                                    <jet-label class="ml-3 text-sm" for="2" :class="{'text-gray-300': has.manager}">Gérant</jet-label>
                                 </div>
                             </div>
                         </div>

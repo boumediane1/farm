@@ -30,12 +30,14 @@ class CreateUsersTable extends Migration
         });
 
         User::create([
-            'name' => 'Khalid Hanafi',
+            'name' => 'Othmane Boumediane',
             'username' => 'admin',
-            'email' => 'hanafi.khalid@gmail.com',
+            'email' => 'boumediane.othmane@gmail.com',
             'password' => Hash::make('admin'),
             'role' => 1
         ]);
+
+
     }
 
     /**

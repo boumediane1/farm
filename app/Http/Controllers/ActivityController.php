@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Activity;
 use App\Http\Requests\StoreActivityRequest;
 use App\Http\Requests\UpdateActivityRequest;
+use App\Models\Equipment;
+use App\Models\Fertilizer;
+use App\Models\User;
+use Inertia\Inertia;
 
 class ActivityController extends Controller
 {
@@ -18,14 +22,17 @@ class ActivityController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+    public function create () {
+        $activities = Activity::all();
+        $users = User::all();
+        $equipments = Equipment::all();
+        $fertilizers = Fertilizer::all();
+        return Inertia::render('Activity/Create', [
+            'activities' => $activities,
+            'users' => $users,
+            'equipments' => $equipments,
+            'fertilizers' => $fertilizers
+        ]);
     }
 
     /**
